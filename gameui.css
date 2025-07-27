@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  color: white;
+  overflow: hidden;
+  background: black url("images/Queen_Marika_the_Eternal78a.webp") no-repeat center center fixed;
+  background-size: cover;
+  cursor: url('images/ghost-cursor.png'), auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+  text-shadow: 0 0 10px white;
+}
+
+.lore {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.carousel {
+  width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+.thumbnails img {
+  width: 80px;
+  margin: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.hp-container {
+  width: 300px;
+  height: 20px;
+  background: rgba(100, 0, 0, 0.4);
+  border: 2px solid #600;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 0 0 10px red;
+}
+
+.hp-bar {
+  height: 100%;
+  width: 80%;
+  background: red;
+  box-shadow: 0 0 15px red;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.volume-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+canvas#particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}
