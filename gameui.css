@@ -7,7 +7,7 @@ body {
   overflow: hidden;
   background: black url("Queen_Marika_the_Eternal78a.webp") no-repeat center center fixed;
   background-size: cover;
-  cursor: url('ghost-cursor.png'), auto;
+  cursor: url('ghost-cursor'), auto;
 }
 
 .title {
